@@ -302,6 +302,7 @@ ul {
         right: 2.2rem;
         top: 2rem;
         z-index: 5;
+        width: 35px;
     }
     .link {
         color: rgb(160, 160, 160);
