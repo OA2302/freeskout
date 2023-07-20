@@ -14,7 +14,9 @@
     font-family: "Epilogue", sans-serif;
 }
 body {
-    background: rgb(1, 1, 68)
+    background-color: rgb(7, 7, 67);
+    animation: fadeIn 2s;
+    max-height: 500px;
 }
 p,
 span {
@@ -46,27 +48,23 @@ ul {
     display: flex;
     align-items: stretch;
     gap: 2rem;
-    margin-left: 580px;
-    margin-bottom: 20px;
+    padding-left: 520px;
 }
 .list-item {
     display: inline-block;
     display: flex;
     align-items: center;
 }
-.link, a {
-    color: rgb(28, 186, 30);
+.link {
+    color:white;
     transition: 0.2s all;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    border: none;
-    font-size: 13px;
-   
 }
 .link:hover {
-   color: red;
-    transition: 2s
+    color: red;
+    transition: 1.5s;
 }
 .arrow {
 }
@@ -125,37 +123,37 @@ ul {
     max-width: 90%;
     display: grid;
     grid-template-columns: 48% 40%;
-    gap: 12%;
-    margin: auto;
+    gap: 16%;
+    padding-left: 120px;
 }
 .left {
     height: 100%;
 }
 .title {
-    font-size: 4rem;
+    font-size: 2rem;
     color: white;
     margin-top: 4rem;
     margin-bottom: 3rem;
+    margin-top: 100px;
 }
 .text {
-    color: rgb(132, 132, 132);
+    color: var(--clr-gray-2);
     line-height: 1.4;
     margin-bottom: 2rem;
 }
 .btn {
-    background-color: rgb(30, 215, 107);
+    background-color: rgb(50, 148, 109);
     padding: 0.9rem 1.5rem;
     color: #fff;
     border-radius: 4px;
     cursor: pointer;
     margin-bottom: 4rem;
+    font-weight: 700;
     transition: 0.2s all;
 }
 .btn:hover {
     background-color: black;
-    border: 1px solid var(--clr-gray-3);
-    color: rgb(30, 215, 107);
-    transition: 2s;
+    color: rgb(50, 148, 109);
 }
 .social-proof {
     width: 100%;
@@ -173,15 +171,16 @@ ul {
 }
 .hero-img {
     display: block;
-    width: 100%;
+    width: 576px;
     background-image: url("images/phone1.png");
     background-size: cover;
+    height: 410px;
+    margin-top: 70px;
 }
-
 /* Header end */
 
 /* Mobile */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 414px){
     .nav {
         display: flex;
         justify-content: space-between;
@@ -196,7 +195,7 @@ ul {
         left: 0;
         right: 0;
         bottom: 0;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(255, 255, 255, 0.5);
         z-index: 1;
         width: auto;
         display: none;
@@ -209,8 +208,9 @@ ul {
         height: 100%;
         flex-direction: column;
         justify-content: flex-start;
-        background-color: #fff;
-        width: 300px;
+        background-color: #fffdfd;
+        width: 250px;
+        margin-top: 150px;
         position: fixed;
         right: 0;
         top: 0;
@@ -231,7 +231,6 @@ ul {
     }
     .auth .link {
         width: 100%;
-        justify-content: center;
     }
     .nav-toggler {
         display: block;
@@ -262,10 +261,6 @@ ul {
         font-size: 1rem;
         white-space: nowrap;
     }
-    .d {
-        display: grid;
-        gap: -40px;
-    }
 
     .header {
         grid-template-columns: 1fr;
@@ -280,8 +275,8 @@ ul {
     }
     .hero-img {
         background-image: url("images/phone1.png");
-        width: 100%;
-        background-size: cover;
+        width: 470px;
+        height: 320px;
     }
 
     .left {
@@ -306,6 +301,12 @@ ul {
         top: 2rem;
         z-index: 5;
     }
+    .link {
+        color: rgb(160, 160, 160);
+    }
+    .link:hover {
+        color: red;
+    }
     .close,
     .open {
         display: none;
@@ -313,9 +314,13 @@ ul {
 
     .show {
         display: block;
+        margin-left: 380px;
+    }
+    .btn {
+        width: 350px;
     }
 }
 
 .show {
     display: block;
-}
+    }
