@@ -265,6 +265,8 @@ ul {
     .header {
         grid-template-columns: 1fr;
         gap: 4%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .title {
         font-size: 3rem;
@@ -314,7 +316,8 @@ ul {
 
     .show {
         display: block;
-        margin-left: 380px;
+        margin-left: 260px;
+        width: 70px;
     }
     .btn {
         width: 350px;
